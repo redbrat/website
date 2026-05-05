@@ -60,6 +60,9 @@
                 a { color: var(--accent); text-decoration: none; font-weight: bold; }
 
     </style>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </head>
 <body>
     <h1>Yarn Drop: Kniting Puzzle</h1>
@@ -81,7 +84,7 @@
     </div>
     <footer>
         <hr style="border: 0; border-top: 1px solid #334155; margin: 4rem 0 2rem;">
-        <p>&copy; 2026 Red Brat Games | <a href="/privacy-policy.html">Privacy</a> | <a href="/terms-and-conditions.html">Terms</a></p>
+        <p>&copy; <span id="year"></span> Redbrat Games. All rights reserved. <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-and-conditions.html">Terms and Conditions</a></p>
     </footer>
 </body>
 </html>
